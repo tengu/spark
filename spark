@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 # spark
 # https://github.com/holman/spark
@@ -117,7 +117,7 @@ print_ticks()
 {
   for number in ${numbers[@]}
   do
-    echo $"$(print_tick $number)\c"
+    echo -n $"$(print_tick $number)"
   done
   echo ""
 }
